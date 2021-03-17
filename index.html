@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Synthesis</title>
+    <style>
+        body {
+            background: black;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        textarea{
+            width: 90%;
+            height: 50vh;
+            resize: none;
+            font-size: xx-large;
+            margin: 10px 0px;
+        }
+        #instructions{
+            width: 90%;
+            font-size: xx-large;
+            margin: 10px 0px;
+            color:white;
+            text-align:center;
+        }
+        button {
+            width: 90%;
+            height: 10vh;
+            margin-top:10px;
+            font-size: 4vw;
+        }
+    </style>
+</head>
+<body>
+    <center>
+
+    <div id="instructions">
+        Type what you want to hear, then click "Start".
+    </div>
+       
+    <div id="container">
+            <textarea name="text" id="text" placeholder="What should I say?"></textarea><br>
+    </div>
+
+    <div id="container2">
+        <button id="start">Start</button>
+    </div>
+     
+    </center>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
